@@ -49,10 +49,10 @@ jobs:
       matrix:
         include:
           - target: x86_64-unknown-linux-musl
-            os: ubuntu-latest
+            os: anvil-ci-linux
             name: herdr-linux-x86_64
           - target: aarch64-unknown-linux-musl
-            os: ubuntu-latest
+            os: anvil-ci-linux
             name: herdr-linux-aarch64
     env:
       LIBGHOSTTY_VT_OPTIMIZE: ${{ inputs.libghostty_optimize }}
